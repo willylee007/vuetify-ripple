@@ -6,6 +6,9 @@ This is a custom directive which extracts from [vuetify's ripple directive](http
 - There is no dependence.
 - Mobile and PC friendly.
 - Tiny and stable.
+  
+## Requirement
+- Vue 2.x
 ## How to install
 ```
 npm install vuetify-ripple
