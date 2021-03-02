@@ -1,29 +1,32 @@
-# ripple-test
+Thanks to [vuetify](https://github.com/vuetifyjs/vuetify). 
 
-## Project setup
-```
-yarn install
-```
+This is a custom directive which extracts from [vuetify's ripple directive](https://github.com/vuetifyjs/vuetify/blob/be8e7a77eafad8925432a4a3abf22f3b8e6f04f8/packages/vuetify/src/directives/ripple/index.ts). 
 
-### Compiles and hot-reloads for development
+## Features
+- There is no dependence.
+- Mobile and PC friendly.
+- Tiny and stable.
+## How to install
 ```
-yarn run serve
-```
-
-### Compiles and minifies for production
-```
-yarn run build
+npm install vuetify-ripple
 ```
 
-### Run your tests
+## How to use
+Import and registers Ripple globally in your main.js file
 ```
-yarn run test
+import Ripple from 'vuetify-ripple';
+
+Vue.directive('ripple', Ripple);
+```
+Then you can use 'v-ripple' in block element.For example:
+```
+<div v-ripple>Test div</div>
+```
+or
+```
+<button v-ripple>Test Btn</button>
 ```
 
-### Lints and fixes files
-```
-yarn run lint
-```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+## LICENSE
+MIT
